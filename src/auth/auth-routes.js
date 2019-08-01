@@ -4,8 +4,10 @@ const authController = require('./auth-controllers')
 const authRouter = express.Router()
 
 authRouter
-    .post('/auth/login', authController.login)
-    .post('/auth/register', authController.register)
+    .post('/auth/signin', authController.signin)
+    .post('/auth/signup', authController.signup)
+
+    .post('/auth/verify', authController.verify)
 
 
 module.exports = authRouter

@@ -20,12 +20,9 @@ const User = (sequelize, DataTypes) => {
             unique: true,
         },
         ssn: {
-            type    : DataTypes.INTEGER,
-            field   : 'ssn',
-            unique  : true,
-            validate: {
-                min: 1000000000,
-            },
+            type  : DataTypes.INTEGER,
+            field : 'ssn',
+            unique: true,
         },
         first_name: {
             type : DataTypes.STRING,
@@ -38,6 +35,11 @@ const User = (sequelize, DataTypes) => {
         password: {
             type : DataTypes.STRING,
             field: 'password',
+        },
+        is_active: {
+            type        : DataTypes.BOOLEAN,
+            field       : 'is_active',
+            defaultValue: false,
         },
     },
     {

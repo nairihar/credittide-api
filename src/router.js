@@ -8,7 +8,7 @@ const router = express.Router()
 // eslint-disable-next-line
 const errorHandler = (err, req, res, next) => {
     console.error(err)
-    res.status(500).send(err.message)
+    res.status(err.status || 500).send(err.message)
 }
 
 const notFound = (req, res) => res.status(404).send('Not Found :(')
