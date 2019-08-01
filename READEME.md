@@ -1,4 +1,4 @@
-# onefix
+# Credit Tide API
 
 ## Installation
 
