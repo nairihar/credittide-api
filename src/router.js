@@ -1,7 +1,9 @@
 const glob = require('glob')
 const express = require('express')
 
-const routes = express.Router()
+const authentication = require('./auth/auth-middleware')
+
+const router = express.Router()
 
 // eslint-disable-next-line
 const errorHandler = (err, req, res, next) => {
@@ -11,11 +13,13 @@ const errorHandler = (err, req, res, next) => {
 
 const notFound = (req, res) => res.status(404).send('Not Found :(')
 
+router.use(authentication)
+
 // eslint-disable-next-line
-glob.sync(`${__dirname}/**/*-routes.js`).forEach(name => routes.use(require(name)))
+glob.sync(`${__dirname}/**/*-routes.js`).forEach(name => router.use(require(name)))
 
-routes.use(errorHandler)
+router.use(errorHandler)
 
-routes.use(notFound)
+router.use(notFound)
 
-module.exports = routes
+module.exports = router
