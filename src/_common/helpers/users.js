@@ -27,4 +27,4 @@ exports.getUserUpdatableFields = user => _.pick(user, [
 
 const userNeededFields = ['email', 'phone', 'first_name', 'last_name', 'password', 'ssn']
 
-exports.isUserDataValid = user => !(!user || !_.has(user, userNeededFields))
+exports.isUserDataValid = user => (!user || !_.has(user, userNeededFields))
