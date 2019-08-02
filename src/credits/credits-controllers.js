@@ -1,7 +1,7 @@
 const { InputError } = require('../_common/errors')
 const {
     createCredit, getCreditsByUserId, getCreditById, getCreditUpdatableFields,
-    updateCreditById,
+    updateCreditById, isCreditDataValid,
 } = require('../_common/helpers/credits')
 
 // TODO :: add pagination and add count to list endpoints
@@ -15,8 +15,8 @@ exports.list = (req, res, next) => {
 
 exports.create = (req, res, next) => {
     const { credit } = req.body
-    if (!credit) {
-        throw new InputError('Credit not specified!')
+    if (!isCreditDataValid(credit)) {
+        throw new InputError('Something missing in credit data!')
     }
 
     const { user_id } = req.user

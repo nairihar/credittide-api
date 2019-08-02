@@ -18,3 +18,7 @@ exports.updateCreditById = (credit_id, updatedCredit) => Credit.update(updatedCr
 exports.getCreditUpdatableFields = user => _.pick(user, [
     'amount', 'type', 'subtype', 'duration_in_month', 'status',
 ])
+
+const creditNeededFields = ['amount', 'type', 'subtype', 'duration_in_month']
+
+exports.isCreditDataValid = credit => !(!credit || !_.has(credit, creditNeededFields))

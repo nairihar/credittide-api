@@ -3,6 +3,7 @@ const { sendConfirmEmail } = require('../_services/email')
 const { InputError, ForbiddenError, NotFoundError } = require('../_common/errors')
 const {
     getUserByEmail, getUserBySSN, createUser, updateUserById,
+    isUserDataValid,
 } = require('../_common/helpers/users')
 
 // TODO :: encrypt passwords
@@ -34,11 +35,10 @@ exports.signin = (req, res, next) => {
 }
 
 exports.signup = (req, res, next) => {
-    if (!req.body.user) {
-        throw new InputError('User object not specified!')
-    }
-
     const { user } = req.body
+    if (!isUserDataValid(user)) {
+        throw new InputError('Something missing in user data!')
+    }
 
     getUserByEmail(user.email)
         .then((userData) => {

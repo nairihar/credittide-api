@@ -24,3 +24,7 @@ exports.updateUserById = (user_id, updatedUser) => User.update(updatedUser, {
 exports.getUserUpdatableFields = user => _.pick(user, [
     'first_name', 'last_name', 'phone',
 ])
+
+const userNeededFields = ['email', 'phone', 'first_name', 'last_name', 'password', 'ssn']
+
+exports.isUserDataValid = user => !(!user || !_.has(user, userNeededFields))
