@@ -21,4 +21,4 @@ exports.getCreditUpdatableFields = user => _.pick(user, [
 
 const creditNeededFields = ['amount', 'type', 'subtype', 'duration_in_month']
 
-exports.isCreditDataValid = credit => !(!credit || !_.has(credit, creditNeededFields))
+exports.isCreditDataValid = credit => (!credit || !_.has(credit, creditNeededFields))
