@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const { User } = require('../../models')
 
 exports.getUserByEmail = email => User.findOne({
@@ -19,3 +20,7 @@ exports.getUserBySSN = ssn => User.findOne({
 exports.updateUserById = (user_id, updatedUser) => User.update(updatedUser, {
     where: { user_id },
 })
+
+exports.getUpdatableFields = user => _.pick(user, [
+    'first_name', 'last_name', 'phone',
+])
