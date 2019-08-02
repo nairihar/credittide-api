@@ -2,7 +2,7 @@ const sendEmail = require('./send')
 const { ui_url } = require('../../_configs/env')
 
 const genConfirmEmailHtml = ssn => (`
-    <a href="${ui_url}/verify/${ssn}">Click to confirmation your email address</a>
+    <a href="${ui_url}/auth/verify/${ssn}">Click to confirmation your email address</a>
 `)
 
 const sendConfirmEmail = (email, ssn) => {
