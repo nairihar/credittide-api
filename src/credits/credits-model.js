@@ -12,6 +12,27 @@ const CreditsModel = (sequelize, DataTypes) => (
             field : 'user_id',
             unique: true,
         },
+        amount: {
+            type : DataTypes.INTEGER,
+            field: 'amount',
+        },
+        type: {
+            type : DataTypes.TEXT,
+            field: 'type',
+        },
+        subtype: {
+            type : DataTypes.TEXT,
+            field: 'subtype',
+        },
+        duration_in_month: {
+            type : DataTypes.INTEGER,
+            field: 'duration_in_month',
+        },
+        status: {
+            type        : DataTypes.JSONB,
+            field       : 'status',
+            defaultValue: {},
+        },
     },
     {
         timestamps: false,

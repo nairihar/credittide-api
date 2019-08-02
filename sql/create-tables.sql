@@ -10,3 +10,13 @@ CREATE TABLE IF NOT EXISTS users (
 	is_active BOOLEAN DEFAULT false
 );
 
+CREATE TABLE IF NOT EXISTS credits (
+	credit_id SERIAL PRIMARY KEY,
+	user_id INTEGER NOT NULL REFERENCES users ON UPDATE CASCADE ON DELETE CASCADE,
+    amount INTEGER NOT NULL,
+    type TEXT NOT NULL,
+    subtype TEXT NOT NULL,
+    duration_in_month INTEGER NOT NULL,
+    status JSONB DEFAULT '{}'
+);
+

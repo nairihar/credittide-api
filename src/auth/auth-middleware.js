@@ -5,6 +5,10 @@ const { validateUserJWT } = require('./auth-utils')
 
 const publicRoutes = [
     '/auth/**',
+    '/loans/**',
+    '/banks/**',
+    '/loans/**',
+    '/conditions/**',
 ]
 
 function validateRequest(req, res, next) {

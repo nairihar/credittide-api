@@ -1,0 +1,247 @@
+{
+  "conditions": {
+    "retail": {
+      "consumer": {
+        "unsecured": {
+          "amd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          }
+        },
+        "secured": {
+          "amd": {
+            "ameria": {
+              "rate": {
+                "min": 15,
+                "max": 15
+              },
+              "maxDuration": 120,
+              "maxAmount": 50000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 72,
+              "maxAmount": 25000000
+            }
+          }
+        }
+      },
+      "mortgage": {
+        "primary": {
+          "amd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          },
+          "usd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          }
+        },
+        "secondary": {
+          "amd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          },
+          "usd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          }
+        },
+        "renovation": {
+          "amd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          },
+          "usd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          }
+        },
+        "construction": {
+          "amd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          },
+          "usd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          }
+        }
+      },
+      "car": {
+        "primary": {
+          "amd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          }
+        },
+        "secondary": {
+          "amd": {
+            "ameria": {
+              "rate": {
+                "min": 16,
+                "max": 21
+              },
+              "maxDuration": 60,
+              "maxAmount": 10000000
+            },
+            "ineco": {
+              "rate": {
+                "min": 14,
+                "max": 19
+              },
+              "maxDuration": 48,
+              "maxAmount": 5000000
+            }
+          }
+        }
+      }
+    },
+    "corporate": {
+
+    }
+  }
+}

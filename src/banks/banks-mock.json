@@ -1,0 +1,87 @@
+[
+  {
+    "id": "ameria",
+    "name": "Ամերիաբանկ",
+    "logo": "ameria-logo.jpg"
+  },
+  {
+    "id": "ineco",
+    "name": "Ինեկոբանկ",
+    "logo": "ineco-logo.png"
+  },
+  {
+    "id": "armbusiness",
+    "name": "Հայբիզնեսբանկ",
+    "logo": "armbusiness-logo.png"
+  },
+  {
+    "id": "ardshin",
+    "name": "Արդշինբանկ",
+    "logo": "ardshin-logo.jpg"
+  },
+  {
+    "id": "acba",
+    "name": "Ակբա֊կրեդիտ ագրիկոլ բանկ",
+    "logo": "acba-logo.jpeg"
+  },
+  {
+    "id": "converse",
+    "name": "Կոնվերս բանկ",
+    "logo": "converse-logo.jpg"
+  },
+  {
+    "id": "vtb",
+    "name": "ՎՏԲ֊Հայաստան բանկ",
+    "logo": "vtb-logo.png"
+  },
+  {
+    "id": "ararat",
+    "name": "Արարատբանկ",
+    "logo": "ararat-logo.jpeg"
+  },
+  {
+    "id": "hsbc",
+    "name": "HSBC բանկ Հայաստան",
+    "logo": "hsbc-logo.png"
+  },
+  {
+    "id": "unibank",
+    "name": "Յունիբանկ",
+    "logo": "unibank-logo.jpeg"
+  },
+  {
+    "id": "armeconom",
+    "name": "Հայէկոնոմբանկ",
+    "logo": "armeconom-logo.jpg"
+  },
+  {
+    "id": "armswiss",
+    "name": "Արմսվիսբանկ",
+    "logo": "armswiss-logo.jpg"
+  },
+  {
+    "id": "artsakh",
+    "name": "Արցախբանկ",
+    "logo": "artsakh-logo.jpg"
+  },
+  {
+    "id": "idbank",
+    "name": "ID բանկ",
+    "logo": "idbank-logo.png"
+  },
+  {
+    "id": "evoca",
+    "name": "Էվոկաբանկ",
+    "logo": "evoca-logo.jpg"
+  },
+  {
+    "id": "byblos",
+    "name": "Բիբլոս բանկ",
+    "logo": "byblos-logo.png"
+  },
+  {
+    "id": "mellat",
+    "name": "Մելլաթ բանկ",
+    "logo": "mellat-logo.jpeg"
+  }
+]

@@ -19,6 +19,10 @@ exports.signin = (req, res, next) => {
                 throw new ForbiddenError('User not found or wrong password!')
             }
 
+            if (!userData.is_active) {
+                throw new ForbiddenError('Please activate the account!')
+            }
+
             const token = generateUserJWT(userData.user_id)
             res.json({
                 token,
