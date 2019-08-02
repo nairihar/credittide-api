@@ -21,6 +21,6 @@ exports.updateUserById = (user_id, updatedUser) => User.update(updatedUser, {
     where: { user_id },
 })
 
-exports.getUpdatableFields = user => _.pick(user, [
+exports.getUserUpdatableFields = user => _.pick(user, [
     'first_name', 'last_name', 'phone',
 ])

@@ -1,4 +1,6 @@
-const { updateUserById, getUpdatableFields, getUserById } = require('../_common/helpers/users')
+const {
+    updateUserById, getUserUpdatableFields, getUserById,
+} = require('../_common/helpers/users')
 
 exports.me = (req, res) => {
     res.json(req.user)
@@ -7,7 +9,7 @@ exports.me = (req, res) => {
 exports.updateMe = (req, res, next) => {
     const { user_id } = req.user
     const { user = {} } = req.body
-    const updateData = getUpdatableFields(user)
+    const updateData = getUserUpdatableFields(user)
     updateUserById(user_id, updateData)
         .then(() => getUserById(user_id))
         .then(userData => res.json(userData.get({ plain: true })))
