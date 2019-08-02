@@ -9,7 +9,7 @@ creditsRouter
     .post('/credits', creditsController.create)
 
     .get('/credits/:credit_id', creditsController.get)
-    .put('/credits/:credit_id', creditsController.create)
-    .delete('/credits/:credit_id', creditsController.delete)
+    // .put('/credits/:credit_id', creditsController.create)
+    // .delete('/credits/:credit_id', creditsController.delete)
 
 module.exports = creditsRouter

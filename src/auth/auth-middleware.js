@@ -1,5 +1,5 @@
 const { doesUrlsMatch } = require('../_common/helpers/utils')
-const { ForbiddenError } = require('../_common/errors')
+const { ForbiddenError, NotFoundError } = require('../_common/errors')
 const { getUserById } = require('../_common/helpers/users')
 const { validateUserJWT } = require('./auth-utils')
 
@@ -12,10 +12,17 @@ const publicRoutes = [
 ]
 
 function validateRequest(req, res, next) {
+    const { authorization } = req.headers
+    if (!authorization) {
+        throw new ForbiddenError('Auth token not specified!')
+    }
     try {
-        const { user_id } = validateUserJWT(req.headers.authorization)
+        const { user_id } = validateUserJWT(authorization)
         getUserById(user_id)
             .then((user) => {
+                if (!user || !user.is_active) {
+                    return next(new NotFoundError('User not found or not activated!'))
+                }
                 req.user = user.getPublicData()
                 next()
             })
