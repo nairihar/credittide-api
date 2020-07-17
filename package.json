@@ -26,7 +26,7 @@
     "express": "^4.17.1",
     "glob": "^7.1.4",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "minimatch": "^3.0.4",
     "nodemailer": "^6.3.0",
     "pg": "^7.12.0",
